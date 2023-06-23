@@ -16,7 +16,7 @@
     "./dist"
   ],
   "scripts": {
-    "start": "tsx src/index.ts",
+    "start": "tsx watch src/index.ts",
     "build": "webpack build --config webpack.config.ts",
     "lint": "jest --config jest-eslint.config.ts",
     "lint:watch": "jest --config jest-eslint.config.ts --watch",
@@ -34,7 +34,10 @@
   "bugs": {
     "url": "https://github.com/robertoachar/playground-mongoose-typescript/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "dotenv": "16.3.1",
+    "mongoose": "7.3.0"
+  },
   "devDependencies": {
     "@babel/core": "7.22.5",
     "@babel/preset-env": "7.22.5",
